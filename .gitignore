@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# the cmake directory that clion generates
+cmake-build-debug
