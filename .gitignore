@@ -33,3 +33,6 @@
 
 # the cmake directory that clion generates
 cmake-build-debug
+
+# the directory i use for cmake
+build
