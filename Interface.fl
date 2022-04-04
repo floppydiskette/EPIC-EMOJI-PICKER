@@ -1,0 +1,68 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0308
+header_name {.h}
+code_name {.cpp}
+class PickerUI {open
+} {
+  Function {PickerUI()} {open
+  } {
+    Fl_Window {} {
+      label {EPIC EMOJI PICKER} open
+      xywh {1068 764 275 235} type Double when 0 visible
+    } {
+      Fl_Group {} {open
+        xywh {5 5 265 225}
+      } {
+        Fl_Button pleading {
+          callback {Fl::copy("🥺", strlen("🥺"), 1);}
+          tooltip pleading image {res/bottom.png} xywh {5 5 75 70}
+        }
+        Fl_Button {} {
+          callback {Fl::copy("😳", strlen("😳"), 1);}
+          tooltip flushed image {res/flushed.png} xywh {100 5 75 70}
+        }
+        Fl_Button {} {
+          callback {Fl::copy("🤨", strlen("🤨"), 1);}
+          tooltip eyebrow image {res/eyebrow.png} xywh {195 5 75 70}
+        }
+        Fl_Group {} {open
+          xywh {5 80 265 150}
+        } {
+          Fl_Button {} {
+            callback {Fl::copy("😔", strlen("😔"), 1);}
+            tooltip pensive image {res/pensive.png} xywh {5 80 75 70}
+          }
+          Fl_Button {} {
+            callback {Fl::copy("🙂", strlen("🙂"), 1);}
+            tooltip {slight smile} image {res/slightsmile.png} xywh {100 80 75 70}
+          }
+          Fl_Button {} {
+            callback {Fl::copy("😎", strlen("😎"), 1);}
+            tooltip sunglasses image {res/sunglasses.png} xywh {195 80 75 70}
+          }
+          Fl_Group {} {open
+            xywh {5 160 265 70}
+          } {
+            Fl_Button {} {
+              callback {Fl::copy("💀", strlen("💀"), 1);}
+              tooltip skull image {res/skull.png} xywh {5 160 75 70}
+            }
+            Fl_Button {} {
+              callback {Fl::copy("🐈", strlen("🐈"), 1);}
+              tooltip {cat2 my beloved} image {res/cat2.png} xywh {100 160 75 70}
+            }
+            Fl_Button {} {
+              callback {Fl::copy("💜", strlen("💜"), 1);}
+              tooltip {purple heart} image {res/heart.png} xywh {195 160 75 70}
+            }
+          }
+        }
+      }
+    }
+    code {w->show();} {}
+  }
+  Function {} {open
+  } {
+    code {PickerUI();} {}
+  }
+}
